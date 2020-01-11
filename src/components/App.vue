@@ -3,8 +3,8 @@
     <h1>Сервис авторизации.</h1>
     <ul>
       <li>
-        <router-link v-if="loggedIn" to="/logout">Log out</router-link>
-        <router-link v-if="!loggedIn" to="/main">Log in</router-link>
+        <router-link v-if="loggedIn" to="/logout">Войти</router-link>
+        <router-link v-if="!loggedIn" to="/main">Выйти</router-link>
       </li>
     </ul>
     <template v-if="$route.matched.length">
