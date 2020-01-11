@@ -1,12 +1,7 @@
 <template>
   <div id="app">
     <h1>Сервис авторизации.</h1>
-    <ul>
-      <li>
-        <router-link v-if="loggedIn" to="/logout">Войти</router-link>
-        <router-link v-if="!loggedIn" to="/main">Выйти</router-link>
-      </li>
-    </ul>
+        <router-link v-if="loggedIn" to="/logout">Выйти</router-link>
     <template v-if="$route.matched.length">
       <router-view></router-view>
     </template>
